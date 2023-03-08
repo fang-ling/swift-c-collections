@@ -10,7 +10,7 @@ import _CCollections
 
 public struct Array<T> {
     var array : UnsafeMutablePointer<_CCollections.Array>
-    var count : Int {
+    public var count : Int {
         get {
             return array.pointee.count
         }
