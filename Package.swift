@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "_CCollections",
             path: "Sources/c-collections",
-            exclude: ["benchmark"]
+            exclude: ["benchmark", "test"]
         ),
         .testTarget(
             name: "swift-c-collectionsTests",
