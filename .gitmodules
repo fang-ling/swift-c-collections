@@ -1,0 +1,3 @@
+[submodule "Sources/c-collections"]
+	path = Sources/c-collections
+	url = https://github.com/fang-ling/c-collections.git
