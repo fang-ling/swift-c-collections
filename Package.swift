@@ -7,14 +7,15 @@ let package = Package(
     products: [
         .library(
             name: "CCollections",
-            targets: ["swift-c-collections"]
+            targets: ["CCollections"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "swift-c-collections",
-            dependencies: ["_CCollections"]
+            name: "CCollections",
+            dependencies: ["_CCollections"],
+            path: "Sources/swift-c-collections"
         ),
         .target(
             name: "_CCollections",
@@ -23,6 +24,6 @@ let package = Package(
         ),
         .testTarget(
             name: "swift-c-collectionsTests",
-            dependencies: ["swift-c-collections"]),
+            dependencies: ["CCollections"])
     ]
 )
