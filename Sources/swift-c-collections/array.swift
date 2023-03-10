@@ -57,6 +57,7 @@ public struct Array<T> {
         }
     }
     
+    @discardableResult
     public func remove(at index : Int) -> T {
         let buf_ptr = array_remove(array, index)
             .bindMemory(to: T.self, capacity: MemoryLayout<T>.size)
@@ -69,6 +70,7 @@ public struct Array<T> {
 //        array_removen(array, index)
 //    }
     
+    @discardableResult
     public func remove_last() -> T {
         let buf_ptr = array_remove_last(array)
             .bindMemory(to: T.self, capacity: MemoryLayout<T>.size)
@@ -81,6 +83,7 @@ public struct Array<T> {
 //        array_remove_lastn(array)
 //    }
     
+    @discardableResult
     public func remove_first() -> T {
         let buf_ptr = array_remove_first(array)
             .bindMemory(to: T.self, capacity: MemoryLayout<T>.size)
