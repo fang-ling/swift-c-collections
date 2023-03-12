@@ -66,9 +66,9 @@ public struct Array<T> {
         return buf
     }
     
-//    public func remove(at index : Int) {
-//        array_removen(array, index)
-//    }
+    public func removen(at index : Int) {
+        array_removen(array, index)
+    }
     
     @discardableResult
     public func remove_last() -> T {
@@ -79,9 +79,9 @@ public struct Array<T> {
         return buf
     }
     
-//    public func remove_last() {
-//        array_remove_lastn(array)
-//    }
+    public func remove_lastn() {
+        array_remove_lastn(array)
+    }
     
     @discardableResult
     public func remove_first() -> T {
@@ -92,9 +92,9 @@ public struct Array<T> {
         return buf
     }
     
-//    public func remove_first() {
-//        array_remove_firstn(array)
-//    }
+    public func remove_firstn() {
+        array_remove_firstn(array)
+    }
     
     public func to_swift_array() -> [T] {
         var res = [T]()
